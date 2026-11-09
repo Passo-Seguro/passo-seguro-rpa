@@ -1,0 +1,181 @@
+{
+  "type": "FeatureCollection",
+  "name": "geosampa_subprefeituras",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "subprefeitura": "Sé",
+        "distrito": "Sé",
+        "sigla": "SE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.66,
+              -23.53
+            ],
+            [
+              -46.62,
+              -23.53
+            ],
+            [
+              -46.62,
+              -23.57
+            ],
+            [
+              -46.66,
+              -23.57
+            ],
+            [
+              -46.66,
+              -23.53
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "subprefeitura": "Pinheiros",
+        "distrito": "Pinheiros",
+        "sigla": "PI"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.72,
+              -23.55
+            ],
+            [
+              -46.66,
+              -23.55
+            ],
+            [
+              -46.66,
+              -23.61
+            ],
+            [
+              -46.72,
+              -23.61
+            ],
+            [
+              -46.72,
+              -23.55
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "subprefeitura": "Mooca",
+        "distrito": "Mooca",
+        "sigla": "MO"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.62,
+              -23.53
+            ],
+            [
+              -46.56,
+              -23.53
+            ],
+            [
+              -46.56,
+              -23.59
+            ],
+            [
+              -46.62,
+              -23.59
+            ],
+            [
+              -46.62,
+              -23.53
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "subprefeitura": "Vila Mariana",
+        "distrito": "Vila Mariana",
+        "sigla": "VM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.66,
+              -23.57
+            ],
+            [
+              -46.61,
+              -23.57
+            ],
+            [
+              -46.61,
+              -23.63
+            ],
+            [
+              -46.66,
+              -23.63
+            ],
+            [
+              -46.66,
+              -23.57
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "subprefeitura": "Lapa",
+        "distrito": "Lapa",
+        "sigla": "LA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -46.73,
+              -23.5
+            ],
+            [
+              -46.66,
+              -23.5
+            ],
+            [
+              -46.66,
+              -23.55
+            ],
+            [
+              -46.73,
+              -23.55
+            ],
+            [
+              -46.73,
+              -23.5
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

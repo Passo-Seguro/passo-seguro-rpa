@@ -1,0 +1,27 @@
+services:
+  triagem:
+    build: .
+    container_name: passo_seguro_rpa_triagem
+    restart: unless-stopped
+    environment:
+      - API_BASE_URL=http://api_principal:8000/api/v1
+      - VISION_API_URL=http://visao_computacional:8001/deteccoes
+      - INTERVALO_EXECUCAO_MINUTOS=30
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+      - ./dist:/app/dist
+      - ./data:/app/data
+    command: ["python", "-m", "src.triagem.main", "--intervalo", "30"]
+
+  triagem-demo:
+    build: .
+    container_name: passo_seguro_rpa_demo
+    environment:
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+      - ./dist:/app/dist
+    command: ["python", "-m", "src.triagem.main", "--executar-uma-vez", "--mock-data", "tests/fixtures/lote_demo.json"]
+    profiles:
+      - demo

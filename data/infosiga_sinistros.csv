@@ -1,0 +1,10 @@
+id_sinistro,data,tipo_vitima,gravidade,logradouro,numero,latitude,longitude,subprefeitura
+INF-2026-001,2026-10-15,Pedestre,FATAL,Praça da Sé,100,-23.5505,-46.6333,Sé
+INF-2026-002,2026-10-20,Pedestre,GRAVE,Avenida Paulista,1500,-23.5615,-46.6558,Sé
+INF-2026-003,2026-10-22,Pedestre,GRAVE,Rua da Consolação,900,-23.5489,-46.6492,Sé
+INF-2026-004,2026-10-28,Pedestre,FATAL,Avenida Brigadeiro Faria Lima,2000,-23.5768,-46.6892,Pinheiros
+INF-2026-005,2026-11-01,Pedestre,GRAVE,Rua Teodoro Sampaio,1200,-23.5620,-46.6810,Pinheiros
+INF-2026-006,2026-10-18,Pedestre,FATAL,Avenida Celso Garcia,2500,-23.5350,-46.5950,Mooca
+INF-2026-007,2026-10-25,Pedestre,GRAVE,Rua da Mooca,1800,-23.5580,-46.6020,Mooca
+INF-2026-008,2026-11-02,Pedestre,GRAVE,Rua Domingos de Morais,1500,-23.5850,-46.6380,Vila Mariana
+INF-2026-009,2026-10-30,Pedestre,FATAL,Rua Clélia,800,-23.5250,-46.6850,Lapa

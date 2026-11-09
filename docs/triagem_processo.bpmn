@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_Triagem_PassoSeguro"
+                  targetNamespace="http://bpmn.io/schema/bpmn"
+                  exporter="Camunda Modeler / bpmn.io"
+                  exporterVersion="5.0.0">
+  <bpmn:process id="Processo_Triagem_PassoSeguro" name="Esteira de Triagem Automatizada RPA - Passo Seguro" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_Lote" name="Gatilho de Execução&#10;(Agendamento / Manual)">
+      <bpmn:outgoing>Flow_1</bpmn:outgoing>
+    </bpmn:startEvent>
+
+    <bpmn:serviceTask id="Task_BuscarRelatos" name="1. Coletar Novos Relatos&#10;(GET /relatos?status=novo)">
+      <bpmn:incoming>Flow_1</bpmn:incoming>
+      <bpmn:outgoing>Flow_2</bpmn:outgoing>
+    </bpmn:serviceTask>
+
+    <bpmn:subProcess id="SubProcess_IteracaoRelato" name="Loop de Triagem por Relato Individual (Isolamento de Falha)">
+      <bpmn:incoming>Flow_2</bpmn:incoming>
+      <bpmn:outgoing>Flow_GerarPacotes</bpmn:outgoing>
+
+      <bpmn:startEvent id="SubStart_Relato" name="Início Relato">
+        <bpmn:outgoing>Flow_Sub1</bpmn:outgoing>
+      </bpmn:startEvent>
+
+      <bpmn:serviceTask id="Task_ValidarMidia" name="2. Validar Mídia&#10;(Pillow / Integridade)">
+        <bpmn:incoming>Flow_Sub1</bpmn:incoming>
+        <bpmn:outgoing>Flow_Sub2</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:exclusiveGateway id="Gateway_ValidaMidia" name="Imagem Íntegra?">
+        <bpmn:incoming>Flow_Sub2</bpmn:incoming>
+        <bpmn:outgoing>Flow_MidiaOK</bpmn:outgoing>
+        <bpmn:outgoing>Flow_MidiaInvalida</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+
+      <bpmn:serviceTask id="Task_RejeitarFoto" name="Rejeitar Relato&#10;(Motivo: Foto Inválida)">
+        <bpmn:incoming>Flow_MidiaInvalida</bpmn:incoming>
+        <bpmn:outgoing>Flow_FimSub_Rejeitado1</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:serviceTask id="Task_ValidarGeo" name="3. Validar Coordenadas SP&#10;(Bounding Box)">
+        <bpmn:incoming>Flow_MidiaOK</bpmn:incoming>
+        <bpmn:outgoing>Flow_Sub3</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:exclusiveGateway id="Gateway_ValidaGeo" name="Dentro de SP?">
+        <bpmn:incoming>Flow_Sub3</bpmn:incoming>
+        <bpmn:outgoing>Flow_GeoOK</bpmn:outgoing>
+        <bpmn:outgoing>Flow_GeoFora</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+
+      <bpmn:serviceTask id="Task_RejeitarForaSP" name="Rejeitar Relato&#10;(Fora de SP)">
+        <bpmn:incoming>Flow_GeoFora</bpmn:incoming>
+        <bpmn:outgoing>Flow_FimSub_Rejeitado2</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:serviceTask id="Task_Deduplicar" name="4. Deduplicação Espacial&#10;(Haversine 30m / 14 dias)">
+        <bpmn:incoming>Flow_GeoOK</bpmn:incoming>
+        <bpmn:outgoing>Flow_Sub4</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:exclusiveGateway id="Gateway_Duplicado" name="Duplicado?">
+        <bpmn:incoming>Flow_Sub4</bpmn:incoming>
+        <bpmn:outgoing>Flow_NaoDuplicado</bpmn:outgoing>
+        <bpmn:outgoing>Flow_Duplicado</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+
+      <bpmn:serviceTask id="Task_RejeitarDuplicado" name="Rejeitar Relato&#10;(Duplicidade Geográfica)">
+        <bpmn:incoming>Flow_Duplicado</bpmn:incoming>
+        <bpmn:outgoing>Flow_FimSub_Rejeitado3</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:serviceTask id="Task_GeoSampa" name="5. Point-in-Polygon GeoSampa&#10;(Identificar Subprefeitura)">
+        <bpmn:incoming>Flow_NaoDuplicado</bpmn:incoming>
+        <bpmn:outgoing>Flow_Sub5</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:exclusiveGateway id="Gateway_ConfiancaVisao" name="Confiança Visão &gt;= 0.60?">
+        <bpmn:incoming>Flow_Sub5</bpmn:incoming>
+        <bpmn:outgoing>Flow_ConfiancaOK</bpmn:outgoing>
+        <bpmn:outgoing>Flow_ConfiancaBaixa</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+
+      <bpmn:serviceTask id="Task_RevisaoHumana" name="Desviar para&#10;Revisão Humana">
+        <bpmn:incoming>Flow_ConfiancaBaixa</bpmn:incoming>
+        <bpmn:outgoing>Flow_FimSub_Revisao</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:serviceTask id="Task_MatrizPrioridade" name="6. Matriz de Prioridade&#10;(Cruzamento Infosiga 150m)">
+        <bpmn:incoming>Flow_ConfiancaOK</bpmn:incoming>
+        <bpmn:outgoing>Flow_Sub6</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:serviceTask id="Task_Encaminhar" name="Marcar como Encaminhado&#10;(PATCH /relatos/{id})">
+        <bpmn:incoming>Flow_Sub6</bpmn:incoming>
+        <bpmn:outgoing>Flow_FimSub_Encaminhado</bpmn:outgoing>
+      </bpmn:serviceTask>
+
+      <bpmn:endEvent id="EndSub_Finalizado" name="Fim do Item">
+        <bpmn:incoming>Flow_FimSub_Encaminhado</bpmn:incoming>
+        <bpmn:incoming>Flow_FimSub_Revisao</bpmn:incoming>
+        <bpmn:incoming>Flow_FimSub_Rejeitado1</bpmn:incoming>
+        <bpmn:incoming>Flow_FimSub_Rejeitado2</bpmn:incoming>
+        <bpmn:incoming>Flow_FimSub_Rejeitado3</bpmn:incoming>
+      </bpmn:endEvent>
+    </bpmn:subProcess>
+
+    <bpmn:serviceTask id="Task_CompilarPacotes" name="7. Exportar Pacotes SP156&#10;(CSV e PDF por Subprefeitura)">
+      <bpmn:incoming>Flow_GerarPacotes</bpmn:incoming>
+      <bpmn:outgoing>Flow_3</bpmn:outgoing>
+    </bpmn:serviceTask>
+
+    <bpmn:serviceTask id="Task_RegistrarLogs" name="8. Consolidação e Auditoria LGPD&#10;(Logs JSONL e Resumo do Lote)">
+      <bpmn:incoming>Flow_3</bpmn:incoming>
+      <bpmn:outgoing>Flow_4</bpmn:outgoing>
+    </bpmn:serviceTask>
+
+    <bpmn:endEvent id="EndEvent_Concluido" name="Lote Concluído">
+      <bpmn:incoming>Flow_4</bpmn:incoming>
+    </bpmn:endEvent>
+
+    <!-- Conexões de Sequência -->
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="StartEvent_Lote" targetRef="Task_BuscarRelatos" />
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_BuscarRelatos" targetRef="SubProcess_IteracaoRelato" />
+    <bpmn:sequenceFlow id="Flow_GerarPacotes" sourceRef="SubProcess_IteracaoRelato" targetRef="Task_CompilarPacotes" />
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_CompilarPacotes" targetRef="Task_RegistrarLogs" />
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_RegistrarLogs" targetRef="EndEvent_Concluido" />
+
+    <!-- Conexões do SubProcesso -->
+    <bpmn:sequenceFlow id="Flow_Sub1" sourceRef="SubStart_Relato" targetRef="Task_ValidarMidia" />
+    <bpmn:sequenceFlow id="Flow_Sub2" sourceRef="Task_ValidarMidia" targetRef="Gateway_ValidaMidia" />
+    <bpmn:sequenceFlow id="Flow_MidiaOK" name="Sim" sourceRef="Gateway_ValidaMidia" targetRef="Task_ValidarGeo" />
+    <bpmn:sequenceFlow id="Flow_MidiaInvalida" name="Não" sourceRef="Gateway_ValidaMidia" targetRef="Task_RejeitarFoto" />
+    <bpmn:sequenceFlow id="Flow_Sub3" sourceRef="Task_ValidarGeo" targetRef="Gateway_ValidaGeo" />
+    <bpmn:sequenceFlow id="Flow_GeoOK" name="Sim" sourceRef="Gateway_ValidaGeo" targetRef="Task_Deduplicar" />
+    <bpmn:sequenceFlow id="Flow_GeoFora" name="Não" sourceRef="Gateway_ValidaGeo" targetRef="Task_RejeitarForaSP" />
+    <bpmn:sequenceFlow id="Flow_Sub4" sourceRef="Task_Deduplicar" targetRef="Gateway_Duplicado" />
+    <bpmn:sequenceFlow id="Flow_NaoDuplicado" name="Não" sourceRef="Gateway_Duplicado" targetRef="Task_GeoSampa" />
+    <bpmn:sequenceFlow id="Flow_Duplicado" name="Sim" sourceRef="Gateway_Duplicado" targetRef="Task_RejeitarDuplicado" />
+    <bpmn:sequenceFlow id="Flow_Sub5" sourceRef="Task_GeoSampa" targetRef="Gateway_ConfiancaVisao" />
+    <bpmn:sequenceFlow id="Flow_ConfiancaOK" name="Sim" sourceRef="Gateway_ConfiancaVisao" targetRef="Task_MatrizPrioridade" />
+    <bpmn:sequenceFlow id="Flow_ConfiancaBaixa" name="Não" sourceRef="Gateway_ConfiancaVisao" targetRef="Task_RevisaoHumana" />
+    <bpmn:sequenceFlow id="Flow_Sub6" sourceRef="Task_MatrizPrioridade" targetRef="Task_Encaminhar" />
+    <bpmn:sequenceFlow id="Flow_FimSub_Encaminhado" sourceRef="Task_Encaminhar" targetRef="EndSub_Finalizado" />
+    <bpmn:sequenceFlow id="Flow_FimSub_Revisao" sourceRef="Task_RevisaoHumana" targetRef="EndSub_Finalizado" />
+    <bpmn:sequenceFlow id="Flow_FimSub_Rejeitado1" sourceRef="Task_RejeitarFoto" targetRef="EndSub_Finalizado" />
+    <bpmn:sequenceFlow id="Flow_FimSub_Rejeitado2" sourceRef="Task_RejeitarForaSP" targetRef="EndSub_Finalizado" />
+    <bpmn:sequenceFlow id="Flow_FimSub_Rejeitado3" sourceRef="Task_RejeitarDuplicado" targetRef="EndSub_Finalizado" />
+  </bpmn:process>
+</bpmn:definitions>
