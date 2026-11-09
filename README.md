@@ -34,7 +34,20 @@ No projeto **Passo Seguro** (solução de CitizenTech para segurança de pedestr
 O robô consome relatos enviados por cidadãos via aplicativo, valida a integridade da mídia, sanitiza dados pessoais (LGPD), descarta relatos duplicados por proximidade geográfica e temporal, enriquece a localização com as Subprefeituras de São Paulo (GeoSampa) e calcula a prioridade de atendimento cruzando as ocorrências com o histórico de sinistros fatais e graves de atropelamento (Infosiga). Ao término, gera os pacotes diários de despacho para o canal municipal SP156 (em formatos CSV e PDF) e atualiza a API central.
 
 ### Ciclo de Vida do Status do Relato
-$$\text{novo} \longrightarrow \begin{cases} \textbf{revisao\_humana} & \text{(se confiança visual } < 0.60\text{)} \\ \textbf{rejeitado} & \text{(foto corrompida, fora de SP ou duplicado)} \\ \textbf{validado} \longrightarrow \textbf{encaminhado} & \text{(Prioridade ALTA / NORMAL / BAIXA)} \end{cases}$$
+
+```text
+               ┌──> [revisao_humana]  (Confiança da IA visual < 0.60)
+               │
+[novo] ────────┼──> [rejeitado]       (Mídia corrompida, fora de SP ou duplicado)
+               │
+               └──> [encaminhado]     (Aprovado: Prioridade ALTA / NORMAL / BAIXA)
+```
+
+| Status Inicial | Condição Avaliada | Status Final | Ação na Esteira |
+| :---: | :--- | :---: | :--- |
+| `novo` | Confiança visual da IA < 0.60 | `revisao_humana` | Encaminha para fila de auditoria manual |
+| `novo` | Foto inválida, fora dos limites de SP ou duplicado (<30m e <14d) | `rejeitado` | Descarta com registro do motivo técnico |
+| `novo` | Validações íntegras e enriquecimento territorial concluído | `encaminhado` | Despacho nos pacotes oficiais do SP156 |
 
 ---
 
@@ -61,8 +74,8 @@ passo-seguro-rpa/
 │   ├── render_bpmn_diagram.py    # Gerador visual do fluxo BPMN em alta resolução
 │   └── gerar_pdf_documentacao.py # Compilador do documento oficial de entrega acadêmica
 ├── data/
-│   ├── geosampa_subprefeituras.geojson   # Polígonos das subprefeituras e distritos
-│   └── infosiga_sinistros_mock.csv       # Histórico de atropelamentos críticos
+│   ├── geosampa_subprefeituras.geojson   # Polígonos das 32 subprefeituras e distritos de SP
+│   └── infosiga_sinistros.csv            # Histórico de atropelamentos críticos e acidentes (Infosiga)
 ├── dist/
 │   ├── entrega_passo_seguro_rpa.pdf     # Documento oficial de entrega (Teams)
 │   └── pacotes/                  # Arquivos CSV e relatórios PDF gerados por subprefeitura
@@ -110,18 +123,24 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Execução sob Demanda (Demonstração com Mocks)
-Comando oficial para demonstração da esteira completa em lote:
+### 3. Execução em Produção (APIs Reais na Nuvem)
+Execução da esteira conectada diretamente na API Central do Azure e no microsserviço de Visão no Railway:
+```bash
+python -m src.triagem.main --executar-uma-vez
+```
+
+### 4. Execução de Demonstração em Lote (Bateria de Testes Locais)
+Execução cobrindo todos os 10 cenários de borda (duplicidades, imagem corrompida, fora de SP, atropelamento fatal):
 ```bash
 python -m src.triagem.main --executar-uma-vez --mock-data tests/fixtures/lote_demo.json
 ```
 
-### 4. Execução Contínua em Agendamento (a cada 30 minutos)
+### 5. Execução Contínua em Agendamento (a cada 30 minutos)
 ```bash
 python -m src.triagem.main --intervalo 30
 ```
 
-### 5. Execução via Docker Compose
+### 6. Execução via Docker Compose
 ```bash
 # Rodar execução da demonstração em container
 docker compose run --rm triagem-demo
