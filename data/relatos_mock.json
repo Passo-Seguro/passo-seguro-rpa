@@ -10,17 +10,11 @@
     "autor_nome": "Carlos Silva",
     "autor_cpf": "123.456.789-00",
     "autor_telefone": "(11) 98765-4321",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "buraco",
       "confianca": 0.94
-    },
-    "subprefeitura": "Sé",
-    "distrito": "Sé",
-    "prioridade": "ALTA",
-    "motivo_decisao": "Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência.",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."
+    }
   },
   {
     "id": "relato-002",
@@ -33,13 +27,11 @@
     "autor_nome": "Maria Oliveira",
     "autor_cpf": "234.567.890-11",
     "autor_telefone": "11988887777",
-    "status": "rejeitado",
+    "status": "novo",
     "visao": {
       "classe": "buraco",
       "confianca": 0.91
-    },
-    "motivo_triagem": "duplicidade_geografica: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias.",
-    "motivo_decisao": "Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."
+    }
   },
   {
     "id": "relato-003",
@@ -52,10 +44,8 @@
     "autor_nome": "João Santos",
     "autor_cpf": "345.678.901-22",
     "autor_telefone": "+55 11 97777-6666",
-    "status": "rejeitado",
-    "visao": null,
-    "motivo_triagem": "imagem_invalida: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4",
-    "motivo_decisao": "Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"
+    "status": "novo",
+    "visao": null
   },
   {
     "id": "relato-004",
@@ -68,13 +58,11 @@
     "autor_nome": "Lucas Ferreira",
     "autor_cpf": "456.789.012-33",
     "autor_telefone": "13 99999-0000",
-    "status": "rejeitado",
+    "status": "novo",
     "visao": {
       "classe": "buraco",
       "confianca": 0.88
-    },
-    "motivo_triagem": "fora_municipio_sp",
-    "motivo_decisao": "Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"
+    }
   },
   {
     "id": "relato-005",
@@ -87,17 +75,11 @@
     "autor_nome": "Fernanda Lima",
     "autor_cpf": "567.890.123-44",
     "autor_telefone": "(11) 96666-5555",
-    "status": "revisao_humana",
+    "status": "novo",
     "visao": {
       "classe": "piso_danificado",
       "confianca": 0.48
-    },
-    "subprefeitura": "Sé",
-    "distrito": "Sé",
-    "prioridade": "media",
-    "motivo_decisao": "Baixa confiança na classificação visual (0.48 < 0.60).",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Baixa confiança na classificação visual (0.48 < 0.60)."
+    }
   },
   {
     "id": "relato-006",
@@ -110,17 +92,11 @@
     "autor_nome": "Guilherme Morais",
     "autor_cpf": "678.901.234-55",
     "autor_telefone": "(11) 95555-4444",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "piso_danificado",
       "confianca": 0.82
-    },
-    "subprefeitura": "Pinheiros",
-    "distrito": "Pinheiros",
-    "prioridade": "NORMAL",
-    "motivo_decisao": "Desnível ou lajota solta com risco moderado de queda.",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Desnível ou lajota solta com risco moderado de queda."
+    }
   },
   {
     "id": "relato-007",
@@ -133,17 +109,11 @@
     "autor_nome": "Júlia Marques",
     "autor_cpf": "789.012.345-66",
     "autor_telefone": "(11) 94444-3333",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "obstaculo",
       "confianca": 0.79
-    },
-    "subprefeitura": "Mooca",
-    "distrito": "Mooca",
-    "prioridade": "BAIXA",
-    "motivo_decisao": "Ocorrência de gravidade leve (obstaculo).",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Ocorrência de gravidade leve (obstaculo)."
+    }
   },
   {
     "id": "relato-008",
@@ -156,17 +126,11 @@
     "autor_nome": "Matheus Gusmão",
     "autor_cpf": "890.123.456-77",
     "autor_telefone": "(11) 93333-2222",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "buraco",
       "confianca": 0.89
-    },
-    "subprefeitura": "Vila Mariana",
-    "distrito": "Vila Mariana",
-    "prioridade": "ALTA",
-    "motivo_decisao": "Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada.",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."
+    }
   },
   {
     "id": "relato-009",
@@ -179,17 +143,11 @@
     "autor_nome": "Ana Paula",
     "autor_cpf": "901.234.567-88",
     "autor_telefone": "(11) 92222-1111",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "obstaculo",
       "confianca": 0.75
-    },
-    "subprefeitura": "Vila Mariana",
-    "distrito": "Vila Mariana",
-    "prioridade": "BAIXA",
-    "motivo_decisao": "Ocorrência de gravidade leve (obstaculo).",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Ocorrência de gravidade leve (obstaculo)."
+    }
   },
   {
     "id": "relato-010",
@@ -202,16 +160,10 @@
     "autor_nome": "Roberto Souza",
     "autor_cpf": "012.345.678-99",
     "autor_telefone": "(11) 91111-0000",
-    "status": "encaminhado",
+    "status": "novo",
     "visao": {
       "classe": "veiculo_na_calcada",
       "confianca": 0.96
-    },
-    "subprefeitura": "Lapa",
-    "distrito": "Lapa",
-    "prioridade": "ALTA",
-    "motivo_decisao": "Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência.",
-    "triado_em": "2026-11-19 19:57:35",
-    "motivo_triagem": "Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."
+    }
   }
 ]

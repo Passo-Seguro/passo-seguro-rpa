@@ -15,13 +15,13 @@ Ficha Técnica: [README do repositório principal](https://github.com/Passo-Segu
 
 1. [Ficha técnica](#1-ficha-técnica)
 2. [Como funciona](#2-como-funciona)
-3. [Resultados](#3-resultados)
-4. [Requisitos e máquina usada](#4-requisitos-e-máquina-usada)
-5. [Instalação](#5-instalação)
-6. [Como rodar a esteira RPA](#6-como-rodar-a-esteira-rpa)
-7. [Modo Mock e Servidor Local](#7-modo-mock-e-servidor-local)
-8. [Testes automatizados](#8-testes-automatizados)
-9. [Desenho do processo (BPMN 2.0)](#9-desenho-do-processo-bpmn-20)
+3. [Desenho do processo (BPMN 2.0)](#3-desenho-do-processo-bpmn-20)
+4. [Resultados](#4-resultados)
+5. [Requisitos e máquina usada](#5-requisitos-e-máquina-usada)
+6. [Instalação](#6-instalação)
+7. [Como rodar a esteira RPA](#7-como-rodar-a-esteira-rpa)
+8. [Modo Mock e Servidor Local](#8-modo-mock-e-servidor-local)
+9. [Testes automatizados](#9-testes-automatizados)
 10. [Estrutura do repositório](#10-estrutura-do-repositório)
 11. [Solução de problemas](#11-solução-de-problemas)
 12. [Links](#12-links)
@@ -81,7 +81,15 @@ flowchart TD
 
 ---
 
-## 3. Resultados
+## 3. Desenho do processo (BPMN 2.0)
+
+O fluxo de negócio do RPA segue rigorosamente a notação **BPMN 2.0**, com tratamento de gateways de decisão, subprocessos e encerramento obrigatório em nós finais (*End Events*):
+
+![Processo BPMN 2.0](docs/triagem_processo.png)
+
+---
+
+## 4. Resultados
 
 ### Métricas da bateria de testes (Lote Demonstrativo)
 
@@ -102,7 +110,7 @@ Execução oficial do lote de demonstração com 10 relatos cobrindo todos os fl
 
 ---
 
-## 4. Requisitos e máquina usada
+## 5. Requisitos e máquina usada
 
 **Requisitos mínimos:**
 - Python 3.11 ou 3.12 64-bit
@@ -120,7 +128,7 @@ Execução oficial do lote de demonstração com 10 relatos cobrindo todos os fl
 
 ---
 
-## 5. Instalação
+## 6. Instalação
 
 Comandos para PowerShell (no Linux/macOS, use `source .venv/bin/activate`):
 
@@ -146,9 +154,9 @@ pytest -v
 
 ---
 
-## 6. Como rodar a esteira RPA
+## 7. Como rodar a esteira RPA
 
-### 6.1 Execução no Modo Mock Local (Recomendado para Avaliação)
+### 7.1 Execução no Modo Mock Local (Recomendado para Avaliação)
 
 Como as APIs de Nuvem podem estar desligadas para contenção de custos de infraestrutura, o RPA conta com um modo mock offline completo com persistência em `data/relatos_mock.json`:
 
@@ -161,7 +169,7 @@ Após rodar, verifique os pacotes gerados em `dist/pacotes/`:
 - `dist/pacotes/YYYY-MM-DD/<SUBPREFEITURA>/relatorio_triagem.pdf`
 - `dist/pacotes/YYYY-MM-DD/<SUBPREFEITURA>/remessa_sp156.csv`
 
-### 6.2 Execução Contínua em Agendamento
+### 7.2 Execução Contínua em Agendamento
 
 Para manter o robô rodando continuamente como serviço em segundo plano (polling com intervalo configurável):
 
@@ -170,7 +178,7 @@ Para manter o robô rodando continuamente como serviço em segundo plano (pollin
 python -m src.triagem.main --intervalo 30
 ```
 
-### 6.3 Execução Conectada à Nuvem Real
+### 7.3 Execução Conectada à Nuvem Real
 
 Para conectar aos microsserviços em produção no Azure Container Apps e Railway, configure seu `.env`:
 
@@ -189,7 +197,7 @@ python -m src.triagem.main --executar-uma-vez
 
 ---
 
-## 7. Modo Mock e Servidor Local
+## 8. Modo Mock e Servidor Local
 
 Para testes locais e demonstrações sem conexão com a internet, o sistema disponibiliza um servidor FastAPI que simula exatamente o contrato da API Central:
 
@@ -207,7 +215,7 @@ python -m src.triagem.servidor_mock --porta 8000
 
 ---
 
-## 8. Testes automatizados
+## 9. Testes automatizados
 
 **22 testes automatizados, todos passando com 100% de sucesso.**
 
@@ -241,14 +249,6 @@ A suíte cobre todas as camadas do sistema (validação, deduplicação, georref
 | | `test_atualizacao_diaria_acumulativa` | Verifica que novos lotes no mesmo dia são acumulados sem perda de histórico |
 | `test_servidor_mock.py` | `test_servidor_mock_rotas_principais` | Testa as rotas `/saude`, `GET /api/relatos` e `PATCH /api/relatos/{id}/status` |
 | | `test_servidor_mock_reset` | Valida que a rota `/api/relatos/reset` restaura o estado padrão |
-
----
-
-## 9. Desenho do processo (BPMN 2.0)
-
-O fluxo de negócio do RPA segue rigorosamente a notação **BPMN 2.0**, com tratamento de gateways de decisão, subprocessos e encerramento obrigatório em nós finais (*End Events*):
-
-![Processo BPMN 2.0](docs/triagem_processo.png)
 
 ---
 

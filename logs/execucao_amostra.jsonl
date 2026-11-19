@@ -521,3 +521,24 @@
 {"timestamp": "2026-11-19T19:55:59.701555+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
 {"timestamp": "2026-11-19T19:55:59.828516+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
 {"timestamp": "2026-11-19T19:56:01.554895+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-19T20:18:00.499515+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-19T20:18:00.501022+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-19T20:18:00.501523+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-19T20:18:00.615054+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-19T20:18:02.105353+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-19T20:18:03.725059+00:00", "item_hash": "72adf3d64101", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-19T20:18:03.725059+00:00", "item_hash": "72adf3d64101", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-19T20:18:03.726062+00:00", "item_hash": "72adf3d64101", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-19T20:18:03.727067+00:00", "item_hash": "72adf3d64101", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-19T20:18:05.081240+00:00", "item_hash": "72adf3d64101", "etapa": "deteccao_visao", "status": "alerta", "mensagem": "Serviço de visão indisponível após 3 tentativas; degradando suavemente."}
+{"timestamp": "2026-11-19T20:18:05.082748+00:00", "item_hash": "72adf3d64101", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (outro)."}
+{"timestamp": "2026-11-19T20:18:06.757897+00:00", "item_hash": "7309f6adb74c", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-19T20:18:06.758901+00:00", "item_hash": "7309f6adb74c", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-19T20:18:06.759405+00:00", "item_hash": "7309f6adb74c", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-19T20:18:06.760411+00:00", "item_hash": "7309f6adb74c", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-19T20:18:08.190691+00:00", "item_hash": "7309f6adb74c", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-19T20:18:09.834142+00:00", "item_hash": "92cafc8e0e6d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-19T20:18:09.835140+00:00", "item_hash": "92cafc8e0e6d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-19T20:18:09.835140+00:00", "item_hash": "92cafc8e0e6d", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-19T20:18:09.836649+00:00", "item_hash": "92cafc8e0e6d", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-19T20:18:11.173929+00:00", "item_hash": "92cafc8e0e6d", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
