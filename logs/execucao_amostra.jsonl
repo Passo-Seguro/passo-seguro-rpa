@@ -1,0 +1,523 @@
+{"timestamp": "2026-11-07T19:07:11.740803+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.742311+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.742811+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.750352+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:11.750852+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:07:11.751856+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.752363+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.752861+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-07T19:07:11.752861+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-07T19:07:11.754372+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.754872+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.755373+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.755874+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-07T19:07:11.755874+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:11.757383+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.757383+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.758388+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.758894+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:11.758894+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-07T19:07:11.760406+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.760406+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.761410+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.762415+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-07T19:07:11.762915+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-07T19:07:11.762915+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.763919+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.764424+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.764924+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-07T19:07:11.765424+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:11.766429+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.766934+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.766934+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.767939+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:11.768444+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:11.768943+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.769946+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.770451+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.770451+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:11.771454+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:11.771958+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:11.772459+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:11.772459+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:11.773463+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-07T19:07:11.774470+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:07:38.533370+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.534881+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.535882+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.536381+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:38.537385+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:07:38.538389+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.538890+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.539390+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-07T19:07:38.539891+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-07T19:07:38.539891+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.540894+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.541400+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.541400+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-07T19:07:38.542908+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:38.543407+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.543407+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.544917+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.544917+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:38.545920+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-07T19:07:38.546425+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.546425+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.547935+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.548434+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-07T19:07:38.548935+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-07T19:07:38.549434+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.549434+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.550438+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.551443+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-07T19:07:38.551443+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:38.552447+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.552951+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.553451+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.554455+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:38.554959+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:38.555460+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.555959+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.555959+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.556962+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:38.557467+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:38.557967+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:38.558467+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:38.558969+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:38.558969+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-07T19:07:38.559976+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:07:57.540497+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.540995+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.541996+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.542999+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:57.542999+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:07:57.544516+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.545016+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.545517+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-07T19:07:57.546016+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-07T19:07:57.547016+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.547517+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.547517+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.549029+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-07T19:07:57.549526+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:57.549526+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.550532+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.551541+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.552041+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:07:57.552041+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-07T19:07:57.553550+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.554051+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.554550+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.555551+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-07T19:07:57.556052+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-07T19:07:57.556551+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.557053+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.557551+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.558050+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-07T19:07:57.558551+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:57.559051+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.559551+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.559551+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.561061+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:57.561561+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:07:57.561561+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.562565+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.563584+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.563584+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:07:57.564597+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:07:57.565102+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:07:57.566102+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:07:57.566606+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:07:57.567106+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-07T19:07:57.567606+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:22:09.433267+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.434776+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.435276+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.436279+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:22:09.437298+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:22:09.437802+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.437802+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.438806+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-07T19:22:09.439815+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-07T19:22:09.440311+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.440811+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.441311+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.441311+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-07T19:22:09.442315+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:22:09.442820+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.443821+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.444321+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.444321+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:22:09.445324+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-07T19:22:09.445828+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.445828+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.446840+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.447346+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-07T19:22:09.447845+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-07T19:22:09.448850+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.449354+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.449854+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.450855+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-07T19:22:09.450855+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:22:09.452365+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.452864+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.452864+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.453868+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:22:09.453868+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:22:09.455433+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.455938+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.455938+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.456943+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:22:09.457447+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:22:09.457947+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:22:09.457947+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:22:09.459456+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:22:09.459956+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-07T19:22:09.460457+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:29:14.007744+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.007744+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.008749+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.010256+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:29:14.010754+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-07T19:29:14.011255+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.012260+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.012764+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-07T19:29:14.013265+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-07T19:29:14.014268+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.014268+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.015285+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.015285+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-07T19:29:14.016300+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:29:14.017824+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.018324+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.018824+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.019824+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-07T19:29:14.020323+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-07T19:29:14.020823+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.021324+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.021829+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.023329+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-07T19:29:14.023329+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-07T19:29:14.024334+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.024840+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.025844+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.026349+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-07T19:29:14.026349+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:29:14.026349+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.027741+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.027741+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.028759+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:29:14.029764+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-07T19:29:14.030265+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.030764+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.031769+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.032274+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-07T19:29:14.032775+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-07T19:29:14.033275+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-07T19:29:14.033275+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-07T19:29:14.034785+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-07T19:29:14.034785+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-07T19:29:14.035789+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T03:27:41.002767+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.006036+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.006533+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.007537+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:27:41.008536+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T03:27:41.009032+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.009535+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.010535+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-09T03:27:41.011034+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-09T03:27:41.011034+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.012037+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.012541+00:00", "item_hash": "7b088d66d0dc", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.013041+00:00", "item_hash": "7b088d66d0dc", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-09T03:27:41.013541+00:00", "item_hash": "7b088d66d0dc", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-09T03:27:41.014043+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.014043+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.015046+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.015046+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:27:41.015552+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-09T03:27:41.016552+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.017052+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.017551+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.018052+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-09T03:27:41.018551+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-09T03:27:41.019051+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.019551+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.020052+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.020553+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-09T03:27:41.021051+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T03:27:41.021051+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.022056+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.022561+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.023060+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T03:27:41.024060+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-09T03:27:41.024060+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.025063+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.025568+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.026069+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T03:27:41.026069+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T03:27:41.027072+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:27:41.027575+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:27:41.028073+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:27:41.028073+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-09T03:27:41.028572+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T03:28:13.212541+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.213546+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.214047+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.214547+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:28:13.216559+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T03:28:13.217060+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.217563+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.218064+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-09T03:28:13.219065+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-09T03:28:13.219564+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.220064+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "erro", "mensagem": "Descarte territorial: Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"}
+{"timestamp": "2026-11-09T03:28:13.221064+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.221064+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.221565+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.222569+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:28:13.223075+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-09T03:28:13.223575+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.224573+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.224573+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.225576+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-09T03:28:13.226581+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-09T03:28:13.227084+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.227585+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.228086+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.228585+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-09T03:28:13.229086+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T03:28:13.230087+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.230586+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.231586+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.231586+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T03:28:13.243581+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-09T03:28:13.244581+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.244581+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.246092+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.246592+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T03:28:13.247097+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T03:28:13.248098+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:28:13.248597+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:28:13.249097+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:28:13.249596+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-09T03:28:13.250096+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T03:30:59.023002+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:30:59.024004+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:30:59.024503+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:30:59.025507+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:31:17.581278+00:00", "item_hash": "687c0e2df469", "etapa": "deteccao_visao", "status": "alerta", "mensagem": "Serviço de visão indisponível após 3 tentativas; degradando suavemente."}
+{"timestamp": "2026-11-09T03:31:17.582276+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-09T03:47:42.433729+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:47:42.434732+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:47:42.435236+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:47:42.436236+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:47:47.956075+00:00", "item_hash": "687c0e2df469", "etapa": "deteccao_visao", "status": "sucesso", "mensagem": "IA YOLO (visao_onnx_real): classe 'buraco' com confiança 0.5141"}
+{"timestamp": "2026-11-09T03:47:47.957081+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-09T03:58:27.604885+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T03:58:27.605384+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T03:58:27.605887+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T03:58:27.607398+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T03:58:37.408312+00:00", "item_hash": "687c0e2df469", "etapa": "deteccao_visao", "status": "alerta", "mensagem": "Serviço de visão indisponível após 3 tentativas; degradando suavemente."}
+{"timestamp": "2026-11-09T03:58:37.408810+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-09T23:19:30.338953+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:19:30.342957+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:19:30.344466+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:19:30.371571+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T23:19:32.153075+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-09T23:33:33.992789+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:33.993287+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:33.996293+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:33.997298+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T23:33:33.999307+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T23:33:34.001811+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.002312+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.002811+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-09T23:33:34.004820+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-09T23:33:34.005820+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.006821+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "erro", "mensagem": "Descarte territorial: Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"}
+{"timestamp": "2026-11-09T23:33:34.007321+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.008325+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.008831+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.009836+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T23:33:34.010336+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-09T23:33:34.011337+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.012336+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.012336+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.013339+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-09T23:33:34.013844+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-09T23:33:34.014844+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.015845+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.016344+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.017345+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-09T23:33:34.018348+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T23:33:34.019354+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.019858+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.020863+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.021365+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T23:33:34.021863+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-09T23:33:34.022362+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.023366+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.024372+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.024871+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-09T23:33:34.025372+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-09T23:33:34.026372+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:33:34.027371+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:33:34.028375+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:33:34.029379+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-09T23:33:34.030389+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-09T23:52:27.195474+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:52:27.196474+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:52:27.196975+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:52:27.198484+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T23:52:29.098358+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-09T23:54:12.342882+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-09T23:54:12.343383+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-09T23:54:12.344893+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-09T23:54:12.346399+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-09T23:54:14.133292+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}
+{"timestamp": "2026-11-10T02:07:51.700401+00:00", "item_hash": "72adf3d64101", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-10T02:07:51.701904+00:00", "item_hash": "72adf3d64101", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-10T02:07:51.702404+00:00", "item_hash": "72adf3d64101", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-10T02:07:51.812603+00:00", "item_hash": "72adf3d64101", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-10T02:07:53.549908+00:00", "item_hash": "72adf3d64101", "etapa": "deteccao_visao", "status": "alerta", "mensagem": "Serviço de visão indisponível após 3 tentativas; degradando suavemente."}
+{"timestamp": "2026-11-10T02:07:53.550911+00:00", "item_hash": "72adf3d64101", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (outro)."}
+{"timestamp": "2026-11-10T02:07:55.405600+00:00", "item_hash": "7309f6adb74c", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-10T02:07:55.406603+00:00", "item_hash": "7309f6adb74c", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-10T02:07:55.407102+00:00", "item_hash": "7309f6adb74c", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-10T02:07:55.408103+00:00", "item_hash": "7309f6adb74c", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-10T02:07:56.908160+00:00", "item_hash": "7309f6adb74c", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-10T02:07:58.674187+00:00", "item_hash": "92cafc8e0e6d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-10T02:07:58.675191+00:00", "item_hash": "92cafc8e0e6d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-10T02:07:58.675697+00:00", "item_hash": "92cafc8e0e6d", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-10T02:07:58.676695+00:00", "item_hash": "92cafc8e0e6d", "etapa": "geo_enrichment", "status": "alerta", "mensagem": "Ponto fora dos polígonos mapeados de subprefeituras"}
+{"timestamp": "2026-11-10T02:08:00.110161+00:00", "item_hash": "92cafc8e0e6d", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-12T19:24:47.928089+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:47.931605+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:47.931605+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.059543+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-12T19:24:48.061054+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-12T19:24:48.063063+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.063564+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.064069+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-12T19:24:48.065073+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-12T19:24:48.066597+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.067645+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "erro", "mensagem": "Descarte territorial: Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"}
+{"timestamp": "2026-11-12T19:24:48.069150+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.069650+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.069650+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.070656+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-12T19:24:48.071160+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-12T19:24:48.072160+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.072659+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.073660+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.073660+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-12T19:24:48.074664+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-12T19:24:48.075170+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.076174+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.077179+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.077681+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-12T19:24:48.078181+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-12T19:24:48.079182+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.079182+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.080198+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.080705+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-12T19:24:48.081204+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-12T19:24:48.082705+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.083203+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.083703+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.083703+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-12T19:24:48.084708+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-12T19:24:48.085725+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-12T19:24:48.086229+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-12T19:24:48.086729+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-12T19:24:48.087233+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-12T19:24:48.088234+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-16T20:13:04.162009+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.163012+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.164021+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.255424+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-16T20:13:04.256933+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-16T20:13:04.257932+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.258935+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.258935+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-16T20:13:04.260479+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-16T20:13:04.261479+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.261980+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "erro", "mensagem": "Descarte territorial: Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"}
+{"timestamp": "2026-11-16T20:13:04.263482+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.263986+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.264487+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.264987+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-16T20:13:04.264987+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-16T20:13:04.266497+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.266996+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.266996+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.267999+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-16T20:13:04.267999+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-16T20:13:04.269514+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.269514+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.270518+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.271022+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-16T20:13:04.271522+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-16T20:13:04.272022+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.273026+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.273531+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.274029+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-16T20:13:04.274530+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-16T20:13:04.275534+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.275534+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.276550+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.277554+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-16T20:13:04.277554+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-16T20:13:04.279564+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:13:04.279564+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:13:04.280567+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:13:04.281071+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-16T20:13:04.281571+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-16T20:19:01.972747+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:01.973249+00:00", "item_hash": "eef3998c5240", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:01.974248+00:00", "item_hash": "eef3998c5240", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.072996+00:00", "item_hash": "eef3998c5240", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-16T20:19:02.073997+00:00", "item_hash": "eef3998c5240", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-001) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-16T20:19:02.074998+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.075497+00:00", "item_hash": "3123cd43df2d", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.075998+00:00", "item_hash": "3123cd43df2d", "etapa": "deduplicacao", "status": "alerta", "mensagem": "Descarte por duplicidade: Duplicidade com relato 'relato-001': distância de 7.5m (< 30.0m) em 1.2 dias."}
+{"timestamp": "2026-11-16T20:19:02.076498+00:00", "item_hash": "b454a673ac95", "etapa": "validacao_imagem", "status": "erro", "mensagem": "Imagem rejeitada: Imagem corrompida ou formato inválido: Invalid base64-encoded string: number of data characters (41) cannot be 1 more than a multiple of 4"}
+{"timestamp": "2026-11-16T20:19:02.077501+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.078542+00:00", "item_hash": "7b088d66d0dc", "etapa": "validacao_geo", "status": "erro", "mensagem": "Descarte territorial: Coordenadas (-23.96, -46.29) fora da Bounding Box de SP"}
+{"timestamp": "2026-11-16T20:19:02.080054+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.080054+00:00", "item_hash": "ca6e290f84ed", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.080054+00:00", "item_hash": "ca6e290f84ed", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.081058+00:00", "item_hash": "ca6e290f84ed", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-16T20:19:02.081563+00:00", "item_hash": "ca6e290f84ed", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.48 < 0.60)."}
+{"timestamp": "2026-11-16T20:19:02.082567+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.083067+00:00", "item_hash": "5d6d89378001", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.084066+00:00", "item_hash": "5d6d89378001", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.084567+00:00", "item_hash": "5d6d89378001", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Pinheiros / Distrito Pinheiros"}
+{"timestamp": "2026-11-16T20:19:02.085067+00:00", "item_hash": "5d6d89378001", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade NORMAL: Desnível ou lajota solta com risco moderado de queda."}
+{"timestamp": "2026-11-16T20:19:02.086066+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.086066+00:00", "item_hash": "6b3f6b366e75", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.087070+00:00", "item_hash": "6b3f6b366e75", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.087070+00:00", "item_hash": "6b3f6b366e75", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Mooca / Distrito Mooca"}
+{"timestamp": "2026-11-16T20:19:02.088083+00:00", "item_hash": "6b3f6b366e75", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-16T20:19:02.089088+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.089588+00:00", "item_hash": "3dbe3690789a", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.090088+00:00", "item_hash": "3dbe3690789a", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.090088+00:00", "item_hash": "3dbe3690789a", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-16T20:19:02.091092+00:00", "item_hash": "3dbe3690789a", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Avaria de classe de risco elevado (buraco), sem histórico recente de sinistro na coordenada."}
+{"timestamp": "2026-11-16T20:19:02.092619+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.093123+00:00", "item_hash": "a616b2ba85f1", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.093623+00:00", "item_hash": "a616b2ba85f1", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.094125+00:00", "item_hash": "a616b2ba85f1", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Vila Mariana / Distrito Vila Mariana"}
+{"timestamp": "2026-11-16T20:19:02.094623+00:00", "item_hash": "a616b2ba85f1", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade BAIXA: Ocorrência de gravidade leve (obstaculo)."}
+{"timestamp": "2026-11-16T20:19:02.095623+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-16T20:19:02.096627+00:00", "item_hash": "48aaa07c97d4", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-16T20:19:02.097131+00:00", "item_hash": "48aaa07c97d4", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-16T20:19:02.097131+00:00", "item_hash": "48aaa07c97d4", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Lapa / Distrito Lapa"}
+{"timestamp": "2026-11-16T20:19:02.097131+00:00", "item_hash": "48aaa07c97d4", "etapa": "decisao_prioridade", "status": "sucesso", "mensagem": "Classificado com Prioridade ALTA: Área crítica: histórico de sinistro de trânsito FATAL (INF-2026-009) a 15.1m da ocorrência."}
+{"timestamp": "2026-11-19T19:55:59.699042+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_imagem", "status": "sucesso", "mensagem": "Buffer de mídia verificado e íntegro"}
+{"timestamp": "2026-11-19T19:55:59.700549+00:00", "item_hash": "687c0e2df469", "etapa": "validacao_geo", "status": "sucesso", "mensagem": "Coordenadas validadas nos limites de SP"}
+{"timestamp": "2026-11-19T19:55:59.701555+00:00", "item_hash": "687c0e2df469", "etapa": "deduplicacao", "status": "sucesso", "mensagem": "Ocorrência inédita no raio geográfico"}
+{"timestamp": "2026-11-19T19:55:59.828516+00:00", "item_hash": "687c0e2df469", "etapa": "geo_enrichment", "status": "sucesso", "mensagem": "Território: Subprefeitura Sé / Distrito Sé"}
+{"timestamp": "2026-11-19T19:56:01.554895+00:00", "item_hash": "687c0e2df469", "etapa": "decisao_prioridade", "status": "alerta", "mensagem": "Encaminhado para triagem humana: Baixa confiança na classificação visual (0.51 < 0.60)."}

@@ -4,7 +4,11 @@ from src.triagem.cliente_api import ClienteAPI
 from src.triagem.main import processar_lote_triagem, JSONLinesLogger
 
 
-def test_pipeline_integracao_lote_demo(tmp_path):
+from src.triagem.config import settings
+
+
+def test_pipeline_integracao_lote_demo(tmp_path, monkeypatch):
+    monkeypatch.setattr(settings, "dist_dir", tmp_path / "pacotes")
     # Carrega os 10 relatos demo
     with open("tests/fixtures/lote_demo.json", "r", encoding="utf-8") as f:
         dados_demo = json.load(f)

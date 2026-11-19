@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     service_token: Optional[str] = None
     vision_token: Optional[str] = None
 
+    # Modo Mock: ativado por padrão para execução autônoma/offline quando as APIs na nuvem estiverem desativadas
+    mock_mode: bool = True
+    mock_data_path: Path = Path("data/relatos_mock.json")
+
     geosampa_data_path: Path = Path("data/geosampa_subprefeituras.geojson")
     infosiga_csv_path: Path = Path("data/infosiga_sinistros.csv")
     intervalo_execucao_minutos: int = 30

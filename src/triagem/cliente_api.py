@@ -1,5 +1,6 @@
 import logging
 import base64
+import json
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Union
 import requests
@@ -15,6 +16,7 @@ class ClienteAPI:
     Cliente de integração HTTP com a API principal do Passo Seguro e o serviço de Visão Computacional.
     Conecta-se à API em produção (Azure Container Apps) ou local, com suporte a autenticação Bearer
     e resiliência via Exponential Backoff (tenacity).
+    Também opera em Modo Mock 100% autônomo e offline quando as APIs na nuvem estiverem desativadas.
     """
 
     def __init__(
@@ -23,20 +25,56 @@ class ClienteAPI:
         vision_api_url: Optional[str] = None,
         service_token: Optional[str] = None,
         vision_token: Optional[str] = None,
-        mock_mode: bool = False
+        mock_mode: Optional[bool] = None,
+        mock_data_path: Optional[Path] = None
     ):
         self.api_base_url = (api_base_url or settings.api_base_url).rstrip("/")
         self.vision_api_url = (vision_api_url or settings.vision_api_url).rstrip("/")
         self.service_token = service_token or settings.service_token
         self.vision_token = vision_token or settings.vision_token
-        self.mock_mode = mock_mode
+        self.mock_mode = settings.mock_mode if mock_mode is None else mock_mode
+        self.mock_data_path = Path(mock_data_path or settings.mock_data_path)
         self._mock_relatos: List[Dict[str, Any]] = []
+
+        if self.mock_mode:
+            self.carregar_dados_mock()
 
     def _headers(self) -> Dict[str, str]:
         headers = {"Accept": "application/json"}
         if self.service_token:
             headers["Authorization"] = f"Bearer {self.service_token}"
         return headers
+
+    def carregar_dados_mock(self):
+        """Carrega os relatos simulados do arquivo local de mock. Se não existir, inicializa com lote_demo.json."""
+        if self.mock_data_path.exists():
+            try:
+                with open(self.mock_data_path, "r", encoding="utf-8") as f:
+                    self._mock_relatos = json.load(f)
+                return
+            except Exception as e:
+                logger.warning(f"Erro ao ler mock_data_path: {e}. Inicializando com lote_demo.json")
+
+        origem = Path("tests/fixtures/lote_demo.json")
+        if origem.exists():
+            self.mock_data_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(origem, "r", encoding="utf-8") as f_origem:
+                self._mock_relatos = json.load(f_origem)
+            try:
+                with open(self.mock_data_path, "w", encoding="utf-8") as f_dest:
+                    json.dump(self._mock_relatos, f_dest, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
+
+    def resetar_dados_mock(self):
+        """Reseta todos os relatos mock para o status inicial 'novo'."""
+        origem = Path("tests/fixtures/lote_demo.json")
+        if origem.exists():
+            with open(origem, "r", encoding="utf-8") as f:
+                self._mock_relatos = json.load(f)
+            self.mock_data_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.mock_data_path, "w", encoding="utf-8") as f:
+                json.dump(self._mock_relatos, f, ensure_ascii=False, indent=2)
 
     def set_mock_data(self, relatos: List[Dict[str, Any]]):
         """Define os dados simulados quando executando em modo mock/demonstração."""
@@ -93,7 +131,27 @@ class ClienteAPI:
         Degradação suave: se a API estiver fora do ar após 3 tentativas, retorna None.
         """
         if self.mock_mode:
-            return None
+            classe_sugerida = "buraco"
+            confianca = 0.88
+            if isinstance(imagem, str):
+                img_lower = imagem.lower()
+                if "piso" in img_lower or "rachad" in img_lower:
+                    classe_sugerida = "piso_danificado"
+                    confianca = 0.82
+                elif "obstaculo" in img_lower or "entulho" in img_lower:
+                    classe_sugerida = "obstaculo"
+                    confianca = 0.79
+                elif "veiculo" in img_lower or "carro" in img_lower:
+                    classe_sugerida = "veiculo_na_calcada"
+                    confianca = 0.95
+                elif "sem_defeito" in img_lower:
+                    return None
+            return {
+                "classe": classe_sugerida,
+                "confianca": confianca,
+                "caixa": {"x": 0.20, "y": 0.35, "largura": 0.35, "altura": 0.28},
+                "todas": [{"classe": classe_sugerida, "confianca": confianca}]
+            }
 
         img_bytes: bytes = b""
         if isinstance(imagem, bytes):
@@ -181,14 +239,22 @@ class ClienteAPI:
             payload["subprefeitura"] = subprefeitura
 
         if self.mock_mode:
+            atualizou = False
             for r in self._mock_relatos:
                 if str(r.get("id")) == str(id_relato):
                     r.update(payload)
                     r["motivo_triagem"] = motivo
                     if dados_complementares:
                         r.update(dados_complementares)
-                    return True
-            return False
+                    atualizou = True
+                    break
+            if atualizou and self.mock_data_path:
+                try:
+                    with open(self.mock_data_path, "w", encoding="utf-8") as f:
+                        json.dump(self._mock_relatos, f, ensure_ascii=False, indent=2)
+                except Exception:
+                    pass
+            return atualizou
 
         url = f"{self.api_base_url}/relatos/{id_relato}"
         resposta = requests.patch(url, json=payload, headers=self._headers(), timeout=45)

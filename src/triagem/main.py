@@ -158,6 +158,9 @@ def processar_lote_triagem(
             relato["prioridade"] = prioridade
             relato["motivo_decisao"] = justificativa
 
+            agora_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+            relato["triado_em"] = agora_str
+
             if status_decidido == "revisao_humana":
                 logger.log_evento(id_relato, "decisao_prioridade", "alerta", f"Encaminhado para triagem humana: {justificativa}")
                 cliente.atualizar_status_relato(
@@ -223,15 +226,31 @@ def main():
     parser = argparse.ArgumentParser(description="Passo Seguro — Esteira RPA de Triagem Operacional")
     parser.add_argument("--executar-uma-vez", action="store_true", help="Executa um único ciclo de lote e encerra")
     parser.add_argument("--token", type=str, default=None, help="Token Bearer de autenticação da API (SERVICE_TOKEN)")
+    parser.add_argument("--mock", action="store_true", default=None, help="Força a execução em Modo Mock (dados simulados locais)")
+    parser.add_argument("--real", action="store_true", help="Força a execução contra as APIs reais na nuvem (Azure/Railway)")
+    parser.add_argument("--reset-mock", action="store_true", help="Reseta os relatos simulados de volta para o status 'novo'")
     parser.add_argument("--mock-data", type=str, default=None, help="Caminho para arquivo JSON de mock para testes locais")
     parser.add_argument("--intervalo", type=int, default=settings.intervalo_execucao_minutos, help="Intervalo em minutos entre execuções contínuas")
 
     args = parser.parse_args()
 
+    # Define o modo de execução: mock por padrão quando APIs estão desativadas
+    modo_mock = settings.mock_mode
+    if args.mock:
+        modo_mock = True
+    elif args.real:
+        modo_mock = False
+
     token = args.token or settings.service_token
-    cliente = ClienteAPI(service_token=token)
+    cliente = ClienteAPI(service_token=token, mock_mode=modo_mock)
     logger = JSONLinesLogger()
     historico_acumulado = []
+
+    if args.reset_mock:
+        cliente.resetar_dados_mock()
+        print("\033[92m[MOCK RESETADO]\033[0m Base de relatos simulados restaurada para o status inicial ('novo').")
+        if not args.executar_uma_vez:
+            return
 
     if args.mock_data:
         caminho_mock = Path(args.mock_data)
@@ -243,8 +262,14 @@ def main():
         cliente.set_mock_data(dados_mock)
         print(f"Carregados {len(dados_mock)} relatos simulados a partir de {caminho_mock}")
 
+    if cliente.mock_mode:
+        print("\033[96m[MODO MOCK ATIVO]\033[0m Executando triagem com dados simulados locais (APIs na nuvem desativadas).")
+
     if args.executar_uma_vez:
-        processar_lote_triagem(cliente, logger, historico_acumulado)
+        resultado = processar_lote_triagem(cliente, logger, historico_acumulado)
+        if cliente.mock_mode and resultado["metricas"]["processados"] == 0:
+            print("ℹ️  Dica: Todos os relatos simulados já foram triados.")
+            print("   Para resetá-los e rodar novamente, use: python -m src.triagem.main --reset-mock --executar-uma-vez\n")
     else:
         print(f"Iniciando serviço de triagem contínua (agendamento a cada {args.intervalo} minutos)...")
         try:

@@ -16,7 +16,7 @@ def carregar_base_infosiga(caminho_csv: Optional[Path] = None) -> List[Dict[str,
 
     caminho = caminho_csv or settings.infosiga_csv_path
     if not Path(caminho).exists():
-        alt = Path("data/infosiga_sinistros.csv") if "mock" in str(caminho) else Path("data/infosiga_sinistros_mock.csv")
+        alt = Path("data/infosiga_sinistros.csv")
         if alt.exists():
             caminho = alt
         else:
