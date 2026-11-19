@@ -4,6 +4,8 @@ Esteira automatizada de triagem, enriquecimento territorial oficial (**GeoSampa 
 
 Ficha Técnica: [README do repositório principal](https://github.com/Passo-Seguro/passo-seguro#ficha-técnica)
 
+Relatorio: https://github.com/Passo-Seguro/passo-seguro-rpa/blob/main/docs/Ficha_Tecnica_rpa.pdf
+
 Video de Demonstração: https://youtu.be/hKbkgN3yASs
 
 ## Integrantes
